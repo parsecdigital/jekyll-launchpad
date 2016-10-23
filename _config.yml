@@ -1,0 +1,44 @@
+include: ['_pages']
+
+# Site settings
+title: Web Design & Development | Parsec Digital
+companyLegalName: Parsec Digital Media, LLC
+companyShortName: Parsec Digital
+companyLogo:
+location: Cincinnati, OH
+email: dave@parsecdigital.io
+description: A web design shop located in the Queen City.
+
+# URLs
+baseurl: ""
+url: "http://localhost:4000" # the base hostname & protocol for your site
+projectURL: "http://localhost:4000/project/"
+imagesURL: "http://localhost:4000/images/"
+
+# Social Media Accounts
+facebook:
+twitter:
+linkedin:
+instagram:
+github:
+codepen:
+
+# Collections
+collections:
+  testimonials:
+  content:
+  projects:
+      output: true
+      permalink: '/:categories/:title'
+
+#Gems
+gems: [jekyll-paginate, jekyll-gist, jekyll-seo-tag, octopress-minify-html]
+paginate: 5
+paginate_path: /blog/:num/
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+sass_dir: public/_scss
+sass:
+  style: compressed
