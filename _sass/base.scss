@@ -67,13 +67,53 @@ img {
     background: $primary;
     color: $white;
     border: 2px solid $primary;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: darken($primary, 15%);
+        border: 2px solid darken($primary, 15%);
+    }
 }
 
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:focus {
-    background: #418396;
-    border: 2px solid #418396;
+.btn-secondary {
+    background: $secondary;
+    color: $black;
+    border: 2px solid $secondary;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: darken($secondary, 15%);
+        border: 2px solid darken($secondary, 15%);
+    }
+}
+
+.btn-tertiary {
+    background: $tertiary;
+    color: $black;
+    border: 2px solid $tertiary;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: darken($tertiary, 15%);
+        border: 2px solid darken($tertiary, 15%);
+    }
+}
+
+.btn-cta,
+.btn-accent {
+    background: $cta;
+    color: $black;
+    border: 2px solid $cta;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: darken($cta, 15%);
+        border: 2px solid darken($cta, 15%);
+    }
 }
 
 .btn-secondary {
@@ -82,18 +122,13 @@ img {
     border: 2px solid #858585;
 }
 
-.btn-secondary:hover,
-.btn-secondary:active,
-.btn-secondary:focus {
-    background: #999999;
-    border: 2px solid #999999;
+.gutter-none {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:active,
-.btn-secondary:focus {
-  color: #fff;
+.img-responsive {
+    width: 100%;
 }
 
 /* FONTS & ICONS
@@ -149,7 +184,7 @@ a.color-white:hover {
     transform: translateY(10px);
 }
 
-.link-hover.color-white a::after {
+.link-hover.color-White a::after {
     background: rgba(255,255,255,0.1);
 }
 
@@ -176,6 +211,18 @@ a.color-white:hover {
     transform: translateY(-100%);
 }
 
+.table {
+  display: table;
+
+  &.vertical-center {
+    height: 100vh;
+  }
+
+  .table-cell {
+      display: table-cell;
+      vertical-align: middle;
+  }
+}
 .cta-bar {
     text-align: center;
     background: $primary !important;

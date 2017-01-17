@@ -3,6 +3,7 @@
 
 /* IMPORTS, MISC, FONTS
 ----------------------------------------- */
+@import "responsive-reporter";
 @import "fonts-colors";
 @import "base";
 @import "mixins";
@@ -10,14 +11,109 @@
 
 /* HEADER
 ----------------------------------------- */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
 
-/* HERO
+    .logo {
+        margin: 0 auto;
+        width: 75%;
+        padding: 15px;
+    }
+}
+
+.menu-btn {
+    height: 100px;
+    width: 100px;
+    z-index: 1000;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+    .menu-icon {
+        position: relative;
+        top: 40%;
+        width: 40px;
+        left: 30%;
+        float: left;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: $white;
+        border-radius: 4px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+
+    span:nth-child(1) {
+      top: 0px;
+    }
+
+    span:nth-child(2),
+    span:nth-child(3) {
+      top: 10px;
+    }
+
+    span:nth-child(4) {
+      top: 20px;
+    }
+}
+
+.menu-btn.nav-open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.menu-btn.nav-open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.menu-btn.nav-open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.menu-btn.nav-open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+/* INTRO
 ----------------------------------------- */
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background: $secondary;
+  color: $white;
+  margin: 0;
+
+  &.standard,
+  .table.vertical-center {
+    height: 45vh;
+  }
+}
 
 /* CONTENT
 ----------------------------------------- */
 
 /* FOOTER
 ----------------------------------------- */
+footer {
+    background: lighten($black, 7%);
+    color: $white;
+    padding: 15px;
+
+    i {
+        color: $white;
+    }
+}
 
 @import "breakpoints";

@@ -1,5 +1,5 @@
 ---
-layout: project-grid
+layout: interior
 title: Work
 permalink: /work/
 ---

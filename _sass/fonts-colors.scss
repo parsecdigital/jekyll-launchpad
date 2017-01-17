@@ -1,11 +1,37 @@
-/* fonts
---------------------------*/
-$oswald: 'Oswald', sans-serif;
-$lato: 'Lato', sans-serif;
+// Colors
+$primary:       #00374E; // Carina Teal
+$secondary:     #37AF90; // Deep Space Navy
+$tertiary:      #99D0BF; // Carina Pale Teal
+$cta:           #FDCF82; // Millennium Tangerine
 
-/* colors
---------------------------*/
-$primary: #356a7a;
-$primary-lgt: lighten($primary, 20%);
-$black: #252525;
-$white: #fff;
+$black:               #000;
+$white:               #fff;
+$mediumGray:          lighten($black, 15%);
+$lightGray:           darken($white, 15%);
+
+// Gradients
+
+
+// Fonts
+
+$Outage: 'outagecut';
+$Roboto: 'Roboto', sans-serif;
+
+@font-face {
+    font-family: 'outagecut';
+    src: url('../fonts/outage/outage_cut-webfont.woff2') format('woff2'),
+         url('../fonts/outage/outage_cut-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6  {
+    font-family: $Outage;
+}
+
+body,
+p {
+  font-family: $Roboto;
+  font-size: 2rem;
+  font-weight: 100;
+}

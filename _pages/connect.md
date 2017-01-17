@@ -1,5 +1,5 @@
 ---
-layout: connect
+layout: interior
 title: Connect
 permalink: /connect/
 ---
